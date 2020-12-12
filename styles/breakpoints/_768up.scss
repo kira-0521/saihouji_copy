@@ -1,0 +1,51 @@
+.header {
+  &__inner {
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-right: auto;
+  }
+  &__btn {
+    display: none;
+  }
+
+  &__nav {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  &__ul {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  &__li {
+    padding: 0 20px;
+    height: 70px;
+    line-height: 70px;
+
+    &:nth-child(1) {
+      background-color: $cDeepBlue;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.03);
+      color: $cOrange;
+      border-bottom: 3px solid $cOrange;
+
+      & > a {
+        color: $cOrange;
+      }
+    }
+    & > a {
+      color: $cWhite;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+.header {
+  &__inner {
+    max-width: $contentMaxWidth;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__li {
+    & > a {
+      font-size: 16px;
+    }
+  }
+}

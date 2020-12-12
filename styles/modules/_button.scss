@@ -1,0 +1,29 @@
+button {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.header__btn {
+  background-color: $cOrange;
+  border-radius: 5px;
+  margin: 10px auto 20px;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  font-size: 14px;
+
+  & .btn {
+    color: $cWhite;
+
+    &::before {
+      // アイコンを表す文字
+      content: "\f039";
+      font-family: FontAwesome;
+      padding-right: 0.3em;
+    }
+  }
+}

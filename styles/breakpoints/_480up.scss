@@ -1,0 +1,13 @@
+.header {
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 80px;
+    margin: 10px;
+  }
+}
